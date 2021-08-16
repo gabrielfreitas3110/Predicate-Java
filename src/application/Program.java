@@ -21,7 +21,8 @@ public class Program {
 	 	//list.removeIf(Product::nonStaticProductPredicate);
 	 	
 	 	Predicate<Product> pred = p -> p.getPrice() >= minimo;
-	 	list.removeIf(pred);
+	 	//list.removeIf(pred);
+	 	list.removeIf(p -> p.getPrice() >= minimo);
 	 	for(Product p: list) {
 	 		System.out.println(p);
 	 	}
