@@ -22,6 +22,9 @@ public class Product {
 	public static boolean staticProductPredicate(Product p) {
 		return p.getPrice() >= 100.0;
 	}
+	public boolean nonStaticProductPredicate() {
+		return getPrice() >= 100.0;
+	}
 	@Override
 	public String toString() {
 		return "Product [name="+name+", price="+String.format("%.2f",price)+']';

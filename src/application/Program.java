@@ -17,7 +17,8 @@ public class Program {
 
 		
 	 	//list.removeIf(new ProductPredicate());
-	 	list.removeIf(Product::staticProductPredicate);
+	 	//list.removeIf(Product::staticProductPredicate);
+	 	list.removeIf(Product::nonStaticProductPredicate);
 	 	for(Product p: list) {
 	 		System.out.println(p);
 	 	}
